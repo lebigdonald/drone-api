@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "47181d56-dae2-437b-869a-8a80d7804e6b",
+		"name": "Drone API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17666684"
+	},
+	"item": [
+		{
+			"name": "Create Drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"serialNumber\": \"ABC-001\",\n    \"model\": \"Heavyweight\",\n    \"weightLimit\": \"400\",\n    \"batteryCapacity\": \"80\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/drone/add",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"drone",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Drone With Medication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Tablette-ABC\",\n    \"weight\": \"150\",\n    \"code\": \"abc-001\",\n    \"image\": \"D://images/tablette-abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9000/drone/load/medication/ABC-001",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"drone",
+						"load",
+						"medication",
+						"ABC-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Drone Medication",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/drone/medications?droneSerialNumber=ABC-001",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"drone",
+						"medications"
+					],
+					"query": [
+						{
+							"key": "droneSerialNumber",
+							"value": "ABC-001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check battery Level",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/drone/battery/ABC-001",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"drone",
+						"battery",
+						"ABC-001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Drone Available For Loading",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/drone/available",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"drone",
+						"available"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
