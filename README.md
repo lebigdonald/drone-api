@@ -11,6 +11,8 @@ Integration and Unit Test has been done.
 >A script is provided `MavenBash` in other to clean, package application then finally run the
 database in a Docker container.
 > 
+> Open the terminal at the root of the project and type the command `./Launch.sh` to run the file
+> 
 > The database uses PORT: 3300 in order to avoid port conflicts.
 > The App runs on 9000
 
