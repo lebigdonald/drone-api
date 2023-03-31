@@ -1,0 +1,10 @@
+Drone ==> Serial Number=ABC-4432, State=IDLE, Battery Level=60
+Drone ==> Serial Number=ABC-8187, State=IDLE, Battery Level=2
+Drone ==> Serial Number=ABC-985, State=IDLE, Battery Level=39
+Drone ==> Serial Number=ABC-674, State=IDLE, Battery Level=78
+Drone ==> Serial Number=ABC-6975, State=IDLE, Battery Level=15
+Drone ==> Serial Number=ABC-3710, State=IDLE, Battery Level=95
+Drone ==> Serial Number=ABC-8751, State=IDLE, Battery Level=2
+Drone ==> Serial Number=ABC-8419, State=IDLE, Battery Level=40
+Drone ==> Serial Number=ABC-6059, State=IDLE, Battery Level=6
+Drone ==> Serial Number=ABC-7503, State=IDLE, Battery Level=98
